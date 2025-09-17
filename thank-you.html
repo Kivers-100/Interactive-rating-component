@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: Overpass;
+      }
+      body {
+        background-color: hsl(216, 12%, 8%);
+        color: hsla(0, 0%, 100%, 0.644);
+        width: 1440px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 15px;
+      }
+
+      .notification-container {
+        max-width: 400px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        background-color: hsl(213, 19%, 18%);
+        border: none;
+        position: relative;
+        height: 350px;
+        margin-left: 30px;
+        border-radius: 15px;
+        padding: 0px 30px;
+      }
+
+      .image {
+        margin-top: 20px;
+      }
+
+      .selection {
+        color: hsl(25, 97%, 53%);
+        border: none;
+        padding: 8px 25px;
+        border-radius: 20px;
+        background-color: hsl(213, 19%, 23%);
+        margin: 25px 0;
+      }
+
+      .thank-you {
+        color: hsl(0, 100%, 100%);
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 10px ;
+      }
+
+      .appreciation-message-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="notification-container">
+      <div class="image">
+        <img src="images/illustration-thank-you.svg" alt="" />
+      </div>
+
+      <div class="selection">
+        <div class="selection-paragraph">
+         
+        </div>
+      </div>
+
+      <div class="thank-you">Thank you!</div>
+
+      <div class="appreciation-message-container">
+        We appreciate you taking the time to give a rating.
+        <span>If you ever need more support, don’t hesitate to</span>
+        <span>get in touch!</span>
+      </div>
+    </div>
+
+    <script src="scripts/thank.js" type="module"></script>
+  </body>
+</html>
